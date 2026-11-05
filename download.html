@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دانلود GTA V | دنیای بازی</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: #090b12;
+    color: white;
+}
+
+html { scroll-behavior: smooth; }
+
+header {
+    height: 85px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #10131d;
+    border-bottom: 1px solid #272b39;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    color: #00e5a0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+nav a:hover { color: #00e5a0; }
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 70px 9%;
+    background:
+    linear-gradient(90deg, rgba(5,8,15,.15), #090b12 100%),
+    linear-gradient(0deg, #090b12, transparent 65%),
+    url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=1800')
+    center/cover;
+}
+
+.hero-content { max-width: 650px; }
+
+.tag {
+    display: inline-block;
+    background: #00e5a0;
+    color: #06130f;
+    padding: 7px 17px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 75px);
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.hero h1 span { color: #00e5a0; }
+
+.hero p {
+    color: #d0d0d0;
+    line-height: 2.2;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    border-radius: 9px;
+    text-decoration: none;
+    background: #00e5a0;
+    color: #06130f;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px #00e5a055;
+}
+
+.container {
+    width: 84%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section { padding: 75px 0; }
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    border-right: 4px solid #00e5a0;
+    padding-right: 15px;
+}
+
+.description {
+    color: #bfc3ce;
+    line-height: 2.5;
+    font-size: 15px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: .3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.035);
+}
+
+.video-box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.video-box iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    right: 0;
+    top: 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: #151a27;
+    padding: 25px;
+    border: 1px solid #292f40;
+    border-radius: 13px;
+}
+
+.info-card h3 {
+    color: #00e5a0;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #bbb;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.download-section {
+    background: linear-gradient(135deg,#101e22,#10131d);
+    border: 1px solid #174b3d;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.download-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.download-section p {
+    color: #c2c7ce;
+    line-height: 2.2;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.secondary {
+    background: #202a38;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #10131d;
+    color: #858b98;
+    font-size: 13px;
+}
+
+@media(max-width:800px) {
+    nav { display:none; }
+    .gallery { grid-template-columns: 1fr 1fr; }
+    .info-grid { grid-template-columns: 1fr; }
+    .hero { min-height: 500px; }
+    .container { width: 90%; }
+}
+
+@media(max-width:500px) {
+    .gallery { grid-template-columns: 1fr; }
+    .gallery img { height: 210px; }
+    .download-section { padding: 25px 15px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">GAME WORLD</div>
+    <nav>
+        <a href="#home">خانه</a>
+        <a href="#about">معرفی بازی</a>
+        <a href="#gallery">تصاویر</a>
+        <a href="#video">ویدئو</a>
+        <a href="#download">دانلود</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">بازی محبوب جهان باز</span>
+        <h1>GRAND THEFT<br><span>AUTO V</span></h1>
+        <p>
+            وارد دنیای بزرگ و هیجان انگیز لوس سانتوس شو!
+            ماشین های فوق العاده، مأموریت های جذاب،
+            تعقیب و گریز و ماجراجویی های بی پایان
+            منتظر تو هستند.
+        </p>
+        <a href="#download" class="btn">دانلود بازی GTA V</a>
+    </div>
+</div>
+
+<div class="container">
+
+<section id="about">
+    <h2 class="section-title">معرفی بازی GTA V</h2>
+    <p class="description">
+        بازی Grand Theft Auto V یکی از محبوب ترین بازی های
+        جهان باز ساخته شرکت Rockstar Games است.
+
+        داستان بازی در شهر خیالی لوس سانتوس جریان دارد.
+        شما می توانید در نقش سه شخصیت اصلی بازی یعنی
+        مایکل، فرانکلین و ترور قرار بگیرید و داستان
+        هیجان انگیز آن ها را تجربه کنید.
+
+        در این بازی آزادی عمل بسیار زیادی دارید.
+        می توانید با ماشین های مختلف رانندگی کنید،
+        به مأموریت های متنوع بروید، در شهر گردش کنید،
+        هواپیما برانید و دنیای بزرگ بازی را کشف کنید.
+    </p>
+</section>
+
+<section id="gallery">
+    <h2 class="section-title">گالری تصاویر بازی</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800" alt="ماشین اسپرت">
+        <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=800" alt="شهر در شب">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="خودروی اسپرت">
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800" alt="نمای شهر">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800" alt="ماشین">
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800" alt="خیابان شهری">
+    </div>
+</section>
+
+<section id="video">
+    <h2 class="section-title">تریلر رسمی GTA V</h2>
+
+    <div class="video-box">
+        <iframe
+        src="https://www.youtube.com/embed/hvoD7ehZPcM"
+        title="GTA V Official Trailer"
+        allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">ویژگی های بازی</h2>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>🌆 دنیای آزاد</h3>
+            <p>در شهر بزرگ لوس سانتوس آزادانه گردش کن و مکان های مختلف را کشف کن.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🏎 ماشین های جذاب</h3>
+            <p>انواع ماشین های اسپرت، مسابقه ای و وسایل نقلیه متنوع را تجربه کن.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🎮 داستان هیجان انگیز</h3>
+            <p>با سه شخصیت اصلی همراه شو و مأموریت های متنوع را انجام بده.</p>
+        </div>
+    </div>
+</section>
+
+<section id="download">
+    <div class="download-section">
+        <h2>دانلود بازی GTA V برای کامپیوتر</h2>
+
+        <p>
+            برای مشاهده نسخه FitGirl و اطلاعات فایل،
+            از لینک های زیر استفاده کنید.
+            نسخه و مشخصات فایل را قبل از دانلود بررسی کنید.
+        </p>
+
+        <div class="download-buttons">
+            <a class="btn" target="_blank"
+            href="https://moderndl.com/">
+                ورود به مدرن دانلود
+            </a>
+
+            <a class="btn secondary" target="_blank"
+            href="https://fitgirl-repacks.to/">
+                سایت FitGirl
+            </a>
+        </div>
+
+        <p style="margin-top:20px;font-size:12px">
+            لینک های بالا به سایت های مربوطه هدایت می شوند؛
+            لینک مستقیم فایل باید از صفحه نسخه موردنظر دریافت شود.
+        </p>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    ساخته شده با ❤️ برای علاقه مندان GTA V
+    <br><br>
+    GAME WORLD © 2026
+</footer>
+
+</body>
+</html>
+
+
